@@ -19,6 +19,7 @@ public class BotBatailleNavale {
     }
     
         public static void Connexion() {
+            
         try {
             
         } catch (Exception e) {
