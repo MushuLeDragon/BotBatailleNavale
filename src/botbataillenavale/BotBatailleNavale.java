@@ -18,4 +18,12 @@ public class BotBatailleNavale {
         // TODO code application logic here
     }
     
+        public static void Connexion() {
+        try {
+            
+        } catch (Exception e) {
+            
+        }
+    }
+    
 }
