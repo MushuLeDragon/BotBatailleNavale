@@ -23,11 +23,8 @@ public class TestClass {
         Desktop.getDesktop().browse(new URI(URL));
         
         /*
-        
-        
         Desktop d = Desktop.getDesktop();
         d.browse(new URI("www.youtube.com"));
-
         */
     }
     
