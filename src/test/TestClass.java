@@ -17,6 +17,8 @@ public class TestClass {
     
     public static void main(String[] args) throws Exception {
         
+        //http://fr.battleship-game.org/
+        
         String URL = "https://www.youtube.com/";
         
         
