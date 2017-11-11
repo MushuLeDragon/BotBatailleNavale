@@ -20,9 +20,15 @@ public class TestClass {
         String URL = "https://www.youtube.com/";
         
         
+        Desktop.getDesktop().browse(new URI(URL));
+        
+        /*
+        
+        
         Desktop d = Desktop.getDesktop();
         d.browse(new URI("www.youtube.com"));
-        
+
+        */
     }
     
 }
