@@ -20,6 +20,13 @@ public class BotBatailleNavale {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        
+        String URL = "https://www.youtube.com/";
+        
+        
+        
+        
 
         String donnees;
 

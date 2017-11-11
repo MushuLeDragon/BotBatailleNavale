@@ -5,10 +5,24 @@
  */
 package test;
 
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+
 /**
  *
  * @author Mushu
  */
 public class TestClass {
+    
+    public static void main(String[] args) throws Exception {
+        
+        String URL = "https://www.youtube.com/";
+        
+        
+        Desktop d = Desktop.getDesktop();
+        d.browse(new URI("www.youtube.com"));
+        
+    }
     
 }
