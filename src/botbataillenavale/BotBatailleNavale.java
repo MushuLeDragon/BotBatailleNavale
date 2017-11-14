@@ -5,9 +5,8 @@
  */
 package botbataillenavale;
 
-import java.io.InputStream;
-import java.net.URL;
-import java.net.URLConnection;
+import java.awt.Desktop;
+import java.net.URI;
 
 /**
  *
@@ -20,18 +19,17 @@ public class BotBatailleNavale {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
-        
-        String URL = "https://www.youtube.com/";
-        
-        
-        
-        
 
-        String donnees;
+        
+        String URL = "http://fr.battleship-game.org/";
 
         try {
 
+            Desktop d = Desktop.getDesktop();
+            d.browse(new URI(URL));
+            
+
+            /*
             URL monURL = new URL("http://localhost/testwww/test.txt");
 
             URLConnection connexion = monURL.openConnection();
@@ -45,11 +43,9 @@ public class BotBatailleNavale {
 
             // Fermeture de la connexion
             flux.close();
-
+             */
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 }
-
-
