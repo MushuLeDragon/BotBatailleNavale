@@ -19,14 +19,21 @@ public class TestCapture {
     
     public static void TestCapture() {
         
+        //x, y = Position du rectangle
+        int x = 10;
+        int y = 20;
+        //Width, height = taille du rectangle
+        int width = 3;
+        int height = 6;
+                
          try { 
             Dimension size = Toolkit.getDefaultToolkit().getScreenSize(); 
             Robot robot = new Robot(); 
-            BufferedImage img = robot.createScreenCapture(new Rectangle(size)); 
+            BufferedImage img = robot.createScreenCapture(new Rectangle(x, y, width, height)); 
         } catch(Exception e) { 
             
         } 
         
-    }
+    }   
     
 }
