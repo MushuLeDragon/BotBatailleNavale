@@ -36,7 +36,8 @@ public class Screenshot {
             Robot robot = new Robot();
             Dimension size = Toolkit.getDefaultToolkit().getScreenSize();
             BufferedImage img = robot.createScreenCapture(new Rectangle(size));
-            ImageIO.write(img, "jpg", new File("D:\\Development\\GitHub\\JavaProjects\\BotBatailleNavale\\Screenshots\\screenshot.jpg"));
+            //ImageIO.write(img, "jpg", new File("D:\\Development\\GitHub\\JavaProjects\\BotBatailleNavale\\Screenshots\\screenshot.jpg"));
+            ImageIO.write(img, "jpg", new File("D:\\Informatique\\GitHub\\BotBatailleNavale\\Screenshots\\screenshot.jpg"));           
             
         } catch (AWTException e) {
             e.printStackTrace();
