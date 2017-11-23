@@ -5,6 +5,7 @@
  */
 package test;
 
+import java.awt.AWTException;
 import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.awt.Robot;
@@ -15,25 +16,30 @@ import java.awt.image.BufferedImage;
  *
  * @author Mushu
  */
-public class TestCapture {
-    
-    public static void TestCapture() {
-        
+public class TestScreenshot {
+
+    public static void TestScreenshot() {
+
         //x, y = Position du rectangle
         int x = 10;
         int y = 20;
         //Width, height = taille du rectangle
         int width = 3;
         int height = 6;
-                
-         try { 
-            Dimension size = Toolkit.getDefaultToolkit().getScreenSize(); 
-            Robot robot = new Robot(); 
-            BufferedImage img = robot.createScreenCapture(new Rectangle(x, y, width, height)); 
-        } catch(Exception e) { 
+
+        try {
+
+            Robot robot = new Robot();
+            Dimension size = Toolkit.getDefaultToolkit().getScreenSize();
+            BufferedImage img = robot.createScreenCapture(new Rectangle(size));
+        } catch (AWTException e) {
+            e.printStackTrace();
             
-        } 
-        
-    }   
-    
+        } catch (IOException e) {
+            e.printStackTrace();
+            
+        }
+
+    }
+
 }

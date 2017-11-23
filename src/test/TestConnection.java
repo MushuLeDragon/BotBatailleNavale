@@ -22,7 +22,12 @@ public class TestConnection {
 
             Desktop d = Desktop.getDesktop();
             d.browse(new URI(URL));
-
+/*
+            String cmd = "chromium-browser --incognito --kiosk http://example.com/";
+            Runtime run = Rintime.getRuntime();
+            Process pr = run.exec(cmd);
+            pr.waitFor();
+*/
         } catch (Exception e) {
             e.printStackTrace();
         }

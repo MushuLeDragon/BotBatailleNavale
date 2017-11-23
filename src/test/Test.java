@@ -8,8 +8,8 @@ package test;
 import java.awt.Desktop;
 import java.io.IOException;
 import java.net.URI;
-import static test.TestCapture.TestCapture;
 import static test.TestConnection.TestConnection;
+import static test.TestScreenshot.TestScreenshot;
 
 /**
  *
@@ -20,7 +20,7 @@ public class Test {
     public static void main(String[] args) throws Exception {
         
         TestConnection();
-        TestCapture();
+        TestScreenshot();
     }
     
 }
