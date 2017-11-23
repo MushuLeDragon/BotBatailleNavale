@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package test;
+package botbataillenavale;
 
 import java.awt.AWTException;
 import java.awt.Dimension;
@@ -18,10 +18,10 @@ import javax.imageio.ImageIO;
  *
  * @author Mushu
  */
-public class TestScreenshot {
+public class Screenshot {
 
-    public static void TestScreenshot() throws InterruptedException {
-        
+    public static void Screenshot() throws InterruptedException {
+        //Delai avant exécution du code pour laisser le temps de capturer
         Thread.sleep(1000);
 
         //x, y = Position du rectangle

@@ -12,9 +12,9 @@ import java.net.URI;
  *
  * @author Mushu
  */
-public class Connection {
+public class Connexion {
 
-    public static void Connection() {
+    public static void Connexion() {
 
         String URL = "http://fr.battleship-game.org/";
 

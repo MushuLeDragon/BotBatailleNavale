@@ -1,13 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package botbataillenavale;
 
-import static botbataillenavale.Connection.Connection;
 import java.awt.Desktop;
 import java.net.URI;
+import static botbataillenavale.Connexion.Connexion;
+import static botbataillenavale.Screenshot.Screenshot;
 
 /**
  *
@@ -15,13 +11,15 @@ import java.net.URI;
  */
 public class BotBatailleNavale {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) throws InterruptedException {
+        /*
+        Features :
+        - Ajouter une interface de validation et pour entrer l'adresse de l'adversaire
+        
+        */
 
-        Connection();
+        Connexion();
+        Screenshot();
         
     }
 }
